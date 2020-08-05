@@ -1,0 +1,79 @@
+[
+  {
+    "id": 1,
+    "name": "dien thoai",
+    "image" : "/imgs/product/dien-thoai.png",
+    "link" : "dienthoai.html"
+  },
+  {
+    "id": 2,
+    "name": "laptop",
+    "image": "/imgs/product/laptop.png",
+    "link" : "latop.html"
+  },
+  {
+    "id": 3,
+    "name": "apple",
+    "image": "/imgs/product/apple.png",
+    "link" : "apple.html"
+  },
+  {
+    "id": 4,
+    "name": "may tinh bang",
+    "image": "/imgs/product/tablet.png",
+    "link" : "tablet.html"
+  },
+  {
+    "id": 5,
+    "name" : "dong ho",
+    "image" : "/imgs/product/smart-watch.png",
+    "link" : "watch.html"
+  },
+  {
+    "id": 6,
+    "name": "op lung dt",
+    "image" : "/imgs/product/op-lung.png",
+    "link" : "oplungdt.html"
+  },
+  {
+    "id":7,
+    "name" : "tai nghe",
+    "image" : "/imgs/product/tai-nghe.png",
+    "link" : "tainghe.html"
+  },
+  {
+    "id": 8,
+    "name" : "the nho",
+    "image": "/imgs/product/the-nho.png",
+    "link" : "thenho.html"
+  },
+  {
+    "id": 9,
+    "name": "loa",
+    "image" : "/imgs/product/loa-nghe-nhac.png",
+    "link" : "loa.html"
+  },
+  {
+    "id": 10,
+    "name" : "cap sac",
+    "image" : "/imgs/product/cap-sac.png",
+    "link" : "capsac.html"
+  },
+  {
+    "id": 11,
+    "name": "may tinh de ban",
+    "image" : "/imgs/product/may-tinh-de-ban.png",
+    "link" : "maytinhdeban.html"
+  },
+  {
+    "id": 12,
+    "name": "may in",
+    "image" : "/imgs/product/may-in.png",
+    "link" : "mayin.html"
+  },
+  {
+    "id": 13,
+    "name": "may tinh de ban",
+    "image" : "/imgs/product/may-tinh-de-ban.png"
+  }
+]

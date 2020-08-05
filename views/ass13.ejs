@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title><%= title %>></title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="lbs/fontawesome/css/all.css"/>
+    <link rel="stylesheet" href="css/ass13.css"/>
+</head>
+<body>
+<h2>So luot nguoi cham:<%= counter %></h2>
+<section class="section">
+    <div class="container">
+        <div class="box" id="weather">
+        </div>
+    </div>
+</section>
+
+<script type="text/javascript" src="JS/jquery.js"></script>
+<script type="text/javascript">
+    $.ajax({
+        url:"http://api.openweathermap.org/data/2.5/forecast",
+        method:"GET",
+        data:{
+            q: "hanoi,vietnam",
+            appid:"09a71427c59d38d6a34f89b47d75975c",
+            units:"metric"
+        },
+        success:function (rs) {
+            let list = rs.list;
+            for(var e of list){
+                var x ="";
+                for(var i of e.weather){
+                    x += i.description;
+                };
+                let item = "<div class=\"item\">\n" +
+                    "                <div class=\"date\">"+e.dt_txt+"</div>\n" +
+                    "                <div class=\"detail\">\n" +
+                    "                    <div class=\"temp\"><span>"+e.main.temp+"</span><sup>o</sup>C </div>\n" +
+                    "                    <div class=\"description\">"+x+"</div>\n" +
+                    "                </div>\n" +
+                    "                <div class=\"icon\"><img src=\"http://openweathermap.org/img/wn/"+e.weather[0].icon+"@2x.png\"></div>\n" +
+                    "            </div>";
+                $("#weather").append(item);
+            };
+        },
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-size: 14px;
+    color: #343132;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #ffffff;
+    line-height: 2;
+}
+.header .tittle{
+    margin: 50px auto;
+    padding: 110px 0;
+    width: 100%;
+    text-align: center;
+    display: block;
+    background-image: url("../imgs/assignment-10/breadcrumb-bg.jpg");
+    background-size: cover;
+}
+.header .tittle h2{
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+.header .tittle a{
+    color: #253237;
+}
+.section{
+    float: left;
+    width: 100%;
+}
+.container{
+    width: 1100px;
+    margin: 0 auto;
+}
+.container::after{
+    content: ".";
+    visibility: hidden;
+    display: block;
+    clear: both;
+}
+a{
+    text-decoration: none;
+}
+.box-details{
+    float: left;
+    width: 100%;
+    border: 1px solid #ebebeb;
+    position: relative;
+    border-radius: 5px;
+    margin-bottom: 30px;
+}
+.box-details:hover{
+    border: 1px solid #4fb68d;
+}
+.box-details h4{
+    background-color: #4fb68d;
+    color: #fefffe;
+    position: absolute;
+    top:20px ;
+    left: 30px;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+.box-details .image{
+    float: left;
+    width: 33%;
+    padding-right: 20px;
+    margin: 2px;
+    height: 100%;
+}
+.box-details .detail-product{
+    float: left;
+    width: 66%;
+    padding: 20px 20px 0;
+    height: 100%;
+}
+.box-details .box{
+    float: left;
+    width: 100%;
+    position: relative;
+}
+.detail-product a span{
+    color: #999999;
+    margin-bottom: 5px;
+}
+.detail-product .box-text{
+    color: #999999;
+}
+.detail-product .box-text a h3{
+    color: #253237;
+    margin-bottom:10px;
+}
+.detail-product .box-text a h3:hover{
+    color:#4fb68d ;
+}
+.detail-product .rate-star{
+    color: #fdd835;
+    margin-bottom:5px;
+}
+.detail-product .price{
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+.box-text .description{
+    padding-bottom: 15px;
+}
+.box-text .stock{
+    margin-bottom: 10px;
+}
+.box-text .stock span{
+    font-weight: 700;
+    color: #4fb68d;
+}
+
+.to-cart{
+    float: left;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: -30px;
+    font-size: 16px;
+}
+.to-cart .left{
+    float: left;
+    width: 25%;
+    text-decoration: underline;
+    font-weight: 700;
+}
+.to-cart .left a{
+    color: #343132;
+}
+.to-cart .left a:hover{
+    color:#4fb68d ;
+}
+.to-cart .right{
+    float: left;
+    width: 74%;
+}
+.to-cart .right a i{
+    color: #343132;
+    margin-right: 10px;
+}
+.to-cart .right a i:hover{
+    color: #4fb68d;
+}

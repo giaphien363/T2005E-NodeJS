@@ -1,0 +1,26 @@
+[
+  {
+    "image" :"imgs/assignment-10/product-5.jpg",
+    "name":"Fila Locker Room Varsity Jacket",
+    "price":"$13",
+    "stock":"392 In Stock"
+  },
+  {
+    "image" :"imgs/assignment-10/product-8.jpg",
+    "name":"Juicy Couture Tricot Logo Stripe Jacket",
+    "price":"$12",
+    "stock":"298 In Stock"
+  },
+  {
+    "image" :"imgs/assignment-10/product-18.jpg",
+    "name":"New Balance Fresh Foam LAZR V1 Sport",
+    "price":"$138",
+    "stock":"456 In Stock"
+  },
+  {
+    "image" :"imgs/assignment-10/product-22.jpg",
+    "name":"Madden By Steve Madden Cale 6",
+    "price":"$36",
+    "stock":"423 In Stock"
+  }
+]

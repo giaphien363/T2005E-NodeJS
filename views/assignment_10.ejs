@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title><%= title %></title>
+    <link rel="stylesheet" href="css/assignment_10.css"/>
+    <link rel="stylesheet" href="lbs/fontawesome/css/all.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<%- include('header_ass15.ejs');%>
+<section class="section">
+    <div class="container" id="container">
+
+        <% items.map(function (e) { %>
+            <div class="box-details">
+                <h4>New</h4>
+                <div class="image">
+                    <img src="<%= e.image %>">
+                </div>
+                <div class="detail-product">
+                    <div class="box">
+                        <a href="#"><span>GRAPHIC CORNER</span></a>
+                        <div class="box-text">
+                            <a href="#"><h3><%= e.name %></h3></a>
+                            <div class="rate-star">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <div class="price">
+                                <p><%= e.price %></p>
+                            </div>
+                            <div class="description">
+                                <p>Create a cool and sporty look with the FILA® Locker Room Varsity Jacket. <br>
+
+                                    Comfortable cotton-blend fabrication. <br>
+
+                                    Classic varsity jacket features brand details throughout. <br>
+
+                                    Flat knit collar.</p>
+                            </div>
+                            <div class="stock">Availability: <span><%= e.stock %></span></div>
+                        </div>
+                        <div class="to-cart">
+                            <div class="left"><a href="#">ADD TO CART</a></div>
+                            <div class="right">
+                                <a href="#"><i class="fas fa-random"></i></a>
+                                <a href="#"><i class="far fa-heart"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+       <% })%>
+
+    </div>
+</section>
+</body>
+</html>
