@@ -10,9 +10,9 @@ app.use(express.static("public"));
 app.set("view engine","ejs");
 
 
-app.get("/",function (req,res) {
-    res.sendFile(__dirname+"/views/home.html");
-});
+// app.get("/",function (req,res) {
+//     res.sendFile(__dirname+"/views/home.html");
+// });
 app.get("/login",function (req,res) {
     let obj={
         name:"nguyen van A",
@@ -22,7 +22,7 @@ app.get("/login",function (req,res) {
 });
 
 var counter = 0;
-app.get("/ass13",function (req,res) {
+app.get("/",function (req,res) {
     // res.sendFile(__dirname+"/views/ass13.html");
     let title = "du bao thoi tiet";
     counter ++;
